@@ -48,7 +48,14 @@ client.on("message", async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if (command === "fish") {
+  if (command === "start") {
+    message.channel.send("t!daily");
+    await sleep(5250);
+
+    // IDEA: Pull a random user from the server if one isn't specified
+    let user = message.mentions.users.first();
+    if (user) message.channel.send(`t!rep <@${user.id}>`);
+  } else if (command === "fish") {
     let maxMessages = args.length > 0 ? args[0] : 100;
     async function goFishing() {
       message.channel.send("t!fishy");
