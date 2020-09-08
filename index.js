@@ -21,7 +21,8 @@ let trashItemCount = 0,
     commonItemCount = 0,
     uncommonItemCount = 0,
     rareItemCount = 0;
-let count = 1;
+let fishCount = 1,
+    spamCount = 1;
 
 client.on("message", async message => {
   if (message.author.id === Tatsu) {
@@ -60,13 +61,13 @@ client.on("message", async message => {
     async function goFishing() {
       message.channel.send("t!fishy");
 
-      if (count < maxMessages) {
-        count++;
+      if (fishCount < maxMessages) {
+        fishCount++;
 
         // Go fishing every 31 seconds
         setTimeout(goFishing, 31000);
       } else {
-        count = 1;
+        fishCount = 1;
 
         // NOTE: Can add check if the relevant category is empty, for small fishing sets
         await sleep(5250);
@@ -87,6 +88,24 @@ client.on("message", async message => {
     }
 
     await goFishing();
+  } else if (command === "xp") {
+    let maxMessages = args.length > 0 ? args[0] : 100;
+    function sendMessage() {
+      message.channel.send("This is spam message #" + spamCount);
+
+      if (spamCount < maxMessages) {
+        spamCount++;
+
+        // Waits between 7.5 and 10 seconds between messages
+        setTimeout(sendMessage, Math.floor(Math.random() * (10000 - 7500)) + 7500);
+      } else {
+        message.channel.send("--------------------------");
+        message.channel.send(   "XP farming completed"   );
+        message.channel.send("--------------------------");
+      }
+    }
+
+    sendMessage();
   }
 });
 
