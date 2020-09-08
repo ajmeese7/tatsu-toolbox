@@ -11,3 +11,5 @@ Run the bot with `node index`.
 | start   | `user` - @ mention the user you want your daily rep to go to.            | Gets your daily credits and gives your rep to the specified user. If no user is specified, no rep will be given. |
 | fish    | `number` - number of times you want to fish; defaults to 100.            | Goes fishing and sells everything you catch that isn't a rare.                                                   |
 | xp      | `number` - number of messages to send while farming XP; defaults to 100. | Sends lots of messages on random time intervals to farm XP.                                                      |
+
+Example usage: `/fish 10`
