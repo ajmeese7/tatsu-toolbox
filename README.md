@@ -1,7 +1,41 @@
 # tatsu-toolbox
-A revamp of the broken Python Tatsu toolbox repo.
+A revamp of the broken Python [Tatsu toolbox](https://github.com/Mattlau04/Tatsumaki-toolbox-discord) repo, 
+comissioned by [azatej](https://github.com/zsamuel43).
 
-Run the bot with `node index`.
+## Downloading
+
+In a command prompt in your projects folder (wherever that may be), run the following:
+
+`git clone https://github.com/ajmeese7/tatsu-toolbox`
+
+Once finished:
+
+- Ensure you have NodeJS installed on your PC by running `npm`. If not, Google how to install it and do that now
+- In the folder from where you ran the git command, run `cd tatsu-toolbox` and then run `npm install`
+- Edit `config.json` and enter your token and desired prefix. It should look like this afterwards:
+
+```json
+{
+  "botToken": "YOUR_TOKEN_HERE",
+  "prefix": "YOUR_DESIRED_PREFIX_HERE"
+}
+```
+
+Your prefix can be anything you want, but I tend to use the `/` because you're unlikely to ever use it on accident.
+
+## Getting your login token
+
+Go to [this link](https://github.com/Tyrrrz/DiscordChatExporter/wiki/Troubleshooting#my-token-is-disappearing-too-quickly-i-cant-copy-it) and follow the instructions
+to get your login token.
+
+> **KEEP YOUR TOKEN SECRET, AND NEVER SHARE IT WITH ANYONE**
+
+## Controlling the selfbot
+To start the selfbot, open a command prompt from the folder containing the repository, run:
+
+`node index`
+
+To stop it, click on the terminal and press **CTRL+C**, which will kill the process.
 
 ## Commands
 
@@ -13,3 +47,10 @@ Run the bot with `node index`.
 | xp      | `number` - number of messages to send while farming XP; defaults to 100. | Sends lots of messages on random time intervals to farm XP.                                                      |
 
 Example usage: `/fish 10`
+
+## Development
+I would like to add in the Tatsugotchi trainer and pet getter features, but I am
+not sure how they work.
+
+If someone can explain the process of these to me I will be happy to try to 
+replicate the functionality.
