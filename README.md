@@ -1,4 +1,3 @@
-<br />
 <h1 align="center">tatsu-toolbox</h1>
 
 <p align="center">
