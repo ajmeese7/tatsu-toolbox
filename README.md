@@ -1,6 +1,14 @@
-# tatsu-toolbox
-A revamp of the broken Python [Tatsu toolbox](https://github.com/Mattlau04/Tatsumaki-toolbox-discord) repo, 
-comissioned by [azatej](https://github.com/zsamuel43).
+<br />
+<h1 align="center">tatsu-toolbox</h1>
+
+<p align="center">
+A revamp of the broken Python <a href="https://github.com/Mattlau04/Tatsumaki-toolbox-discord">Tatsu toolbox</a>
+repo, comissioned by <a href="https://github.com/zsamuel43">azatej</a>.
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/17814535/93029626-e5331b80-f5e1-11ea-94e0-da75a3c12736.png" title="Tatsu Toolbox" alt="Tatsu Toolbox">
+</p>
 
 ## Downloading
 
